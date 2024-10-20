@@ -185,7 +185,7 @@ const About = () => {
 						happy to dedicate to further development and learning the
 						areas that will be crucial for the team. I am open to
 						suggestions to best prepare myself for the new role and
-						fully meet the company's expectations.
+						fully meet the company&apos;s expectations.
 					</motion.p>
 					<motion.div
 						variants={fadeIn('right', 0.6)}
@@ -267,7 +267,10 @@ const About = () => {
 											{item.icons?.map((icon, itemIndex) => {
 												return (
 													<>
-														<div className='text-2xl text-white transition-colors hover:text-accent duration-300 cursor-pointer'>
+														<div
+															key={itemIndex}
+															className='text-2xl text-white transition-colors hover:text-accent duration-300 cursor-pointer'
+														>
 															{icon}
 														</div>
 													</>
