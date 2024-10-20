@@ -19,6 +19,7 @@ module.exports = {
       md: '768px',
       lg: '960px',
       xl: '1200px',
+      '2xl': '1400px',
     },
     extend: {
       colors: {
@@ -34,6 +35,8 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
+        'movement': 'movement 2s linear infinite',
+        
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],

@@ -18,9 +18,19 @@
   color: #f13024;
 }
 
+@keyframes movement {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    
+    transform: translateX(20px);
+  }
+}
+
 @layer base {
   body {
-    @apply bg-secondary overflow-hidden leading-relaxed;
+    @apply bg-secondary overflow-hidden leading-relaxed selection:bg-accent selection:text-black;
   }
   .page {
     @apply w-full h-screen overflow-hidden;
