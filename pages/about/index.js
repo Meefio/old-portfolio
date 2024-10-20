@@ -258,22 +258,17 @@ const About = () => {
 					<div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
 						{aboutData[index].info.map((item, itemIndex) => {
 							return (
-								<div className='flex items-center'>
-									<div
-										key={itemIndex}
-										className='flex-1 flex flex-col md:flex-row gap-x-2 items-center text-white/60 w-[125px]'
-									>
+								<div key={itemIndex} className='flex items-center'>
+									<div className='flex-1 flex flex-col md:flex-row gap-x-2 items-center text-white/60 w-[125px]'>
 										<div className='flex gap-x-4'>
 											{item.icons?.map((icon, itemIndex) => {
 												return (
-													<>
-														<div
-															key={itemIndex}
-															className='text-2xl text-white transition-colors hover:text-accent duration-300 cursor-pointer'
-														>
-															{icon}
-														</div>
-													</>
+													<div
+														key={itemIndex}
+														className='text-2xl text-white transition-colors hover:text-accent duration-300 cursor-pointer'
+													>
+														{icon}
+													</div>
 												)
 											})}
 										</div>
